@@ -1,8 +1,6 @@
 package com.coutsproject.mangako_kotlin_api.chapter.dto
 
-import com.coutsproject.mangako_kotlin_api.manga.domain.Manga
 import java.time.LocalDateTime
-import javax.management.Descriptor
 
 data class ChapterResponseDTO(
     var id: Long? = null,

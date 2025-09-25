@@ -27,7 +27,7 @@ class ChapterService(private val repository: ChapterRepository, private val mapp
     fun changeChapter(idChapter:Long, dto: ChapterRequestDTO): ChapterResponseDTO{
         val chapters = repository.findById(idChapter).orElseThrow { NoSuchElementException("Chapter com ID $idChapter não encontrado") }
 
-        var updated = chapters.copy(
+        val updated = chapters.copy(
             numbers = dto.numbers,
             images = dto.images,
         )
